@@ -13,46 +13,53 @@
   --z-index-keyboard-overlays: 4;
 
   /* Named colors */
-  --error: hsl(0deg 100% 30%);
-  --warning: hsl(52deg 84% 56%);
+  --error: hsl(0deg 90% 42%);
+  --warning: hsl(38deg 92% 50%);
   --red: var(--error);
   --yellow: var(--warning);
-  --green: hsl(151deg 100% 25%);
-  --gray: hsl(0deg 0% 67%);
-  --dark-gray: hsl(0deg 0% 25%);
+  --green: hsl(151deg 76% 36%);
+  --gray: hsl(220deg 8% 60%);
+  --dark-gray: hsl(220deg 12% 28%);
 
   /* Base colors (backgrounds) */
-  --background: light-dark(hsl(0deg 0% 100%), hsl(0deg 0% 15%));
-  --background-darker: light-dark(hsl(0deg 0% 95%), hsl(0deg 0% 20%));
-  --background-darkest: light-dark(hsl(0deg 0% 90%), hsl(0deg 0% 25%));
-  --background-button: light-dark(hsl(0deg 0% 80%), hsl(0deg 0% 35%));
+  --background: light-dark(hsl(210deg 20% 98%), hsl(222deg 18% 12%));
+  --background-darker: light-dark(hsl(210deg 16% 95%), hsl(222deg 16% 16%));
+  --background-darkest: light-dark(hsl(210deg 14% 91%), hsl(222deg 14% 20%));
+  --background-button: light-dark(hsl(210deg 12% 88%), hsl(222deg 16% 28%));
 
   /* Base colors (borders) */
-  --border-lighter: light-dark(hsl(0deg 0% 90%), hsl(0deg 0% 25%));
-  --border: light-dark(hsl(0deg 0% 85%), hsl(0deg 0% 30%));
-  --border-darker: light-dark(hsl(0deg 0% 80%), hsl(0deg 0% 35%));
+  --border-lighter: light-dark(hsl(210deg 16% 88%), hsl(222deg 14% 24%));
+  --border: light-dark(hsl(210deg 14% 82%), hsl(222deg 12% 30%));
+  --border-darker: light-dark(hsl(210deg 12% 76%), hsl(222deg 14% 36%));
 
   /* Base colors (foreground) */
-  --text-color: light-dark(hsl(0deg 0% 25%), hsl(0deg 0% 80%));
-  --text-color-lighter: light-dark(hsl(0deg 0% 30%), hsl(0deg 0% 75%));
-  --text-color-lightest: light-dark(hsl(0deg 0% 40%), hsl(0deg 0% 65%));
-  --link-color: light-dark(hsl(203deg 100% 32%), hsl(203deg 100% 68%));
-  --link-hover-color: var(--text-color-lighter);
+  --text-color: light-dark(hsl(220deg 16% 18%), hsl(210deg 14% 88%));
+  --text-color-lighter: light-dark(hsl(220deg 10% 36%), hsl(210deg 12% 76%));
+  --text-color-lightest: light-dark(hsl(220deg 8% 52%), hsl(210deg 10% 70%));
+  --text-color-chart: light-dark(hsl(0deg 0% 30%), hsl(0deg 0% 15%));
+  --link-color: light-dark(hsl(212deg 92% 46%), hsl(212deg 92% 62%));
+  --link-hover-color: light-dark(hsl(212deg 92% 38%), hsl(212deg 92% 72%));
 
   /* Base elements */
   --heading-color: var(--text-color);
   --code-background: var(--background-darker);
 
   /* Box shadows */
-  --box-shadow-button: 0 0 5px hsl(0deg 0% 50% / 50%);
-  --box-shadow-dropdown: 3px 3px 3px
-    light-dark(hsl(0deg 0% 50% / 50%), hsl(0deg 0% 25% / 50%));
+  --box-shadow-button:
+    0 1px 3px light-dark(hsl(220deg 12% 20% / 12%), hsl(0deg 0% 0% / 24%)),
+    0 1px 2px light-dark(hsl(220deg 12% 20% / 8%), hsl(0deg 0% 0% / 16%));
+  --box-shadow-dropdown:
+    0 4px 6px -1px light-dark(hsl(220deg 12% 20% / 12%), hsl(0deg 0% 0% / 24%)),
+    0 2px 4px -1px light-dark(hsl(220deg 12% 20% / 8%), hsl(0deg 0% 0% / 16%));
   --box-shadow-kbd: inset 0 -1px 0 var(--border-darker);
-  --box-shadow-overlay: 0 0 20px var(--overlay-wrapper-background);
+  --box-shadow-overlay:
+    0 20px 25px -5px
+    light-dark(hsl(220deg 12% 20% / 12%), hsl(0deg 0% 0% / 28%)),
+    0 10px 10px -5px light-dark(hsl(220deg 12% 20% / 6%), hsl(0deg 0% 0% / 12%));
 
   /* Buttons */
   --button-color: hsl(0deg 0% 100%);
-  --button-background: hsl(203deg 100% 32%);
+  --button-background: hsl(212deg 92% 46%);
   --button-muted-color: var(--text-color);
   --button-muted-background: var(--background-button);
 
@@ -68,20 +75,26 @@
 
   /* Header */
   --header-color: hsl(0deg 0% 100%);
-  --header-background: light-dark(hsl(203deg 100% 32%), hsl(203deg 100% 25%));
-  --header-placeholder-color: hsl(203deg 47% 66%);
-  --header-placeholder-background: hsl(203deg 56% 45%);
+  --header-background: light-dark(hsl(212deg 48% 42%), hsl(212deg 52% 28%));
+  --header-placeholder-color: light-dark(
+    hsl(212deg 30% 75%),
+    hsl(212deg 40% 68%)
+  );
+  --header-placeholder-background: light-dark(
+    hsl(212deg 52% 52%),
+    hsl(212deg 48% 38%)
+  );
 
   /* Tables */
-  --table-header-text: var(--text-color-lightest);
+  --table-header-text: var(--text-color-lighter);
   --table-header-background: var(--background-darkest);
   --table-border: var(--border-lighter);
   --table-background-even: var(--background-darker);
-  --treetable-expander: light-dark(hsl(210deg 30% 45%), hsl(210deg 30% 55%));
+  --treetable-expander: light-dark(hsl(212deg 60% 52%), hsl(212deg 60% 62%));
 
   /* Amount differences. */
-  --diff-red: light-dark(hsl(0deg 48% 40%), hsl(0deg 48% 60%));
-  --diff-green: light-dark(hsl(125deg 48% 40%), hsl(125deg 48% 60%));
+  --diff-red: light-dark(hsl(0deg 72% 48%), hsl(0deg 72% 64%));
+  --diff-green: light-dark(hsl(142deg 65% 40%), hsl(142deg 65% 58%));
   --diff-negative: var(--diff-red);
   --diff-positive: var(--diff-green);
 
@@ -116,14 +129,17 @@
 
   /* Misc */
   --notification-color: hsl(0deg 0% 100%);
-  --chart-axis: hsl(0deg 0% 60%);
-  --chart-line-at-zero: hsl(0deg 0% 40%);
-  --autocomplete-match: hsl(39deg 100% 70% / 50%);
-  --mobile-button-text: light-dark(hsl(0deg 0% 0%), hsl(0deg 0% 79%));
-  --placeholder-color: light-dark(hsl(0deg 0% 47%), hsl(0deg 0% 85%));
-  --placeholder-background: light-dark(hsl(0deg 0% 100%), hsl(0deg 0% 30%));
-  --dragover-background: hsl(203deg 100% 32% / 50%);
-  --overlay-wrapper-background: hsl(0deg 0% 50% / 50%);
+  --chart-axis: light-dark(hsl(220deg 10% 60%), hsl(210deg 10% 52%));
+  --chart-line-at-zero: light-dark(hsl(220deg 12% 46%), hsl(210deg 10% 48%));
+  --autocomplete-match: hsl(45deg 100% 62% / 42%);
+  --mobile-button-text: light-dark(hsl(220deg 16% 18%), hsl(210deg 14% 88%));
+  --placeholder-color: var(--text-color-lightest);
+  --placeholder-background: var(--background);
+  --dragover-background: hsl(212deg 92% 46% / 42%);
+  --overlay-wrapper-background: light-dark(
+    hsl(220deg 12% 20% / 32%),
+    hsl(0deg 0% 0% / 56%)
+  );
 
   /* Help pages */
   --help-sidebar-background: var(--background-darker);
@@ -136,58 +152,64 @@
 }
 
 .journal {
-  --journal-postings: light-dark(hsl(0deg 0% 92%), hsl(0deg 0% 10%));
-  --journal-metadata: hsl(210deg 44% 67%);
-  --journal-tag: hsl(210deg 61% 64%);
-  --journal-link: hsl(203deg 39% 85%);
-  --journal-posting-indicator: hsl(203deg 24% 80%);
-  --journal-metadata-indicator: hsl(203deg 24% 40%);
+  --journal-postings: light-dark(hsl(210deg 16% 94%), hsl(222deg 16% 14%));
+  --journal-metadata: light-dark(hsl(212deg 64% 62%), hsl(212deg 64% 68%));
+  --journal-tag: light-dark(hsl(212deg 76% 58%), hsl(212deg 76% 66%));
+  --journal-link: light-dark(hsl(212deg 54% 80%), hsl(212deg 54% 72%));
+  --journal-posting-indicator: light-dark(
+    hsl(212deg 42% 76%),
+    hsl(212deg 42% 62%)
+  );
+  --journal-metadata-indicator: light-dark(
+    hsl(212deg 52% 48%),
+    hsl(212deg 52% 58%)
+  );
   --journal-hover-highlight: light-dark(
-    hsl(0deg 0% 90% / 60%),
-    hsl(0deg 0% 20% / 60%)
+    hsl(210deg 22% 92% / 70%),
+    hsl(222deg 18% 20% / 70%)
   );
 
   .balance {
-    --entry-background: light-dark(hsl(120deg 100% 90%), hsl(120deg 50% 15%));
+    --entry-background: light-dark(hsl(142deg 65% 92%), hsl(142deg 52% 18%));
   }
 
   .close {
-    --entry-background: light-dark(hsl(0deg 0% 70%), hsl(0deg 0% 15%));
+    --entry-background: light-dark(hsl(220deg 8% 78%), hsl(222deg 12% 22%));
   }
 
   .custom {
-    --entry-background: light-dark(hsl(51deg 100% 80%), hsl(52deg 100% 15%));
+    --entry-background: light-dark(hsl(45deg 96% 84%), hsl(45deg 86% 20%));
   }
 
   .document {
-    --entry-background: light-dark(hsl(300deg 100% 80%), hsl(300deg 45% 25%));
+    --entry-background: light-dark(hsl(290deg 76% 88%), hsl(290deg 52% 26%));
   }
 
   .note {
-    --entry-background: light-dark(hsl(213deg 100% 80%), hsl(212deg 43% 25%));
+    --entry-background: light-dark(hsl(212deg 86% 88%), hsl(212deg 64% 28%));
   }
 
   .open {
-    --entry-background: light-dark(hsl(0deg 0% 92%), hsl(0deg 0% 20%));
+    --entry-background: light-dark(hsl(210deg 16% 94%), hsl(222deg 14% 22%));
   }
 
   .other {
-    --entry-background: light-dark(hsl(180deg 100% 70%), hsl(180deg 100% 25%));
+    --entry-background: light-dark(hsl(180deg 76% 82%), hsl(180deg 72% 26%));
   }
 
   .pad {
-    --entry-background: light-dark(hsl(180deg 100% 85%), hsl(180deg 100% 15%));
+    --entry-background: light-dark(hsl(180deg 76% 90%), hsl(180deg 72% 20%));
   }
 
   .pending {
-    --entry-background: light-dark(hsl(343deg 100% 80%), hsl(343deg 60% 20%));
+    --entry-background: light-dark(hsl(343deg 82% 88%), hsl(343deg 68% 26%));
   }
 
   .query {
-    --entry-background: light-dark(hsl(213deg 100% 80%), hsl(213deg 100% 25%));
+    --entry-background: light-dark(hsl(212deg 86% 88%), hsl(212deg 76% 28%));
   }
 
   .budget {
-    --entry-background: light-dark(hsl(35deg 100% 80%), hsl(35deg 100% 20%));
+    --entry-background: light-dark(hsl(35deg 92% 84%), hsl(35deg 86% 24%));
   }
 }
