@@ -11,9 +11,10 @@
 
   interface Props {
     charts: readonly ParsedFavaChart[];
+    show_conversion_and_interval?: boolean;
   }
 
-  let { charts }: Props = $props();
+  let { charts, show_conversion_and_interval = true }: Props = $props();
 
   const chart_key = (chart: ParsedFavaChart) => chart.key ?? chart.label;
 
@@ -46,7 +47,7 @@
 
 {#if active_chart}
   <Chart chart={active_chart.with_context($chart_context)}>
-    <ConversionAndInterval />
+    {#if show_conversion_and_interval}<ConversionAndInterval />{/if}
   </Chart>
   <div hidden={!$show_charts}>
     {#each charts as chart, index (chart_key(chart) ?? index)}
