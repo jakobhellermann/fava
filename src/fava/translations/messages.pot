@@ -198,7 +198,6 @@ msgid "Location"
 msgstr ""
 
 #: frontend/src/modals/Export.svelte:13
-#: frontend/src/sidebar/AsideContents.svelte:73
 msgid "Export"
 msgstr ""
 
@@ -245,7 +244,7 @@ msgid "Price"
 msgstr ""
 
 #: frontend/src/reports/commodities/index.ts:32
-#: frontend/src/sidebar/AsideContents.svelte:46
+#: frontend/src/sidebar/AsideContents.svelte:40
 msgid "Commodities"
 msgstr ""
 
@@ -263,7 +262,6 @@ msgid "Name"
 msgstr ""
 
 #: frontend/src/reports/documents/index.ts:19
-#: frontend/src/sidebar/AsideContents.svelte:47
 msgid "Documents"
 msgstr ""
 
@@ -294,12 +292,11 @@ msgstr ""
 
 #: frontend/src/reports/editor/EditorMenu.svelte:81
 #: frontend/src/reports/options/index.ts:15
-#: frontend/src/sidebar/AsideContents.svelte:75
+#: frontend/src/sidebar/AsideContents.svelte:69
 msgid "Options"
 msgstr ""
 
 #: frontend/src/reports/editor/index.ts:33
-#: frontend/src/sidebar/AsideContents.svelte:57
 msgid "Editor"
 msgstr ""
 
@@ -318,7 +315,7 @@ msgid "No errors."
 msgstr ""
 
 #: frontend/src/reports/errors/index.ts:6
-#: frontend/src/sidebar/AsideContents.svelte:68
+#: frontend/src/sidebar/AsideContents.svelte:62
 msgid "Errors"
 msgstr ""
 
@@ -328,7 +325,7 @@ msgstr ""
 
 #: frontend/src/reports/events/Events.svelte:16
 #: frontend/src/reports/events/index.ts:17
-#: frontend/src/sidebar/AsideContents.svelte:50
+#: frontend/src/sidebar/AsideContents.svelte:44
 msgid "Events"
 msgstr ""
 
@@ -344,7 +341,7 @@ msgstr ""
 #: frontend/src/reports/holdings/Holdings.svelte:18
 #: frontend/src/reports/holdings/Holdings.svelte:20
 #: frontend/src/reports/holdings/index.ts:92
-#: frontend/src/sidebar/AsideContents.svelte:45
+#: frontend/src/sidebar/AsideContents.svelte:39
 msgid "Holdings"
 msgstr ""
 
@@ -365,13 +362,12 @@ msgstr ""
 #: frontend/src/reports/holdings/Holdings.svelte:56
 #: frontend/src/reports/query/index.ts:16
 #: frontend/src/reports/statistics/Statistics.svelte:24
-#: frontend/src/sidebar/AsideContents.svelte:31
 msgid "Query"
 msgstr ""
 
 #: frontend/src/reports/import/Extract.svelte:58
 #: frontend/src/reports/import/index.ts:59
-#: frontend/src/sidebar/AsideContents.svelte:72
+#: frontend/src/sidebar/AsideContents.svelte:66
 msgid "Import"
 msgstr ""
 
@@ -470,7 +466,7 @@ msgid "Change"
 msgstr ""
 
 #: frontend/src/reports/journal/index.ts:58
-#: frontend/src/sidebar/AsideContents.svelte:30
+#: frontend/src/sidebar/AsideContents.svelte:24
 msgid "Journal"
 msgstr ""
 
@@ -541,22 +537,22 @@ msgid "Last Entry"
 msgstr ""
 
 #: frontend/src/reports/statistics/index.ts:37
-#: frontend/src/sidebar/AsideContents.svelte:54
+#: frontend/src/sidebar/AsideContents.svelte:48
 msgid "Statistics"
 msgstr ""
 
 #: frontend/src/reports/tree_reports/index.ts:38
-#: frontend/src/sidebar/AsideContents.svelte:27
+#: frontend/src/sidebar/AsideContents.svelte:21
 msgid "Income Statement"
 msgstr ""
 
 #: frontend/src/reports/tree_reports/index.ts:49
-#: frontend/src/sidebar/AsideContents.svelte:28
+#: frontend/src/sidebar/AsideContents.svelte:22
 msgid "Balance Sheet"
 msgstr ""
 
 #: frontend/src/reports/tree_reports/index.ts:63
-#: frontend/src/sidebar/AsideContents.svelte:29
+#: frontend/src/sidebar/AsideContents.svelte:23
 msgid "Trial Balance"
 msgstr ""
 
@@ -564,11 +560,11 @@ msgstr ""
 msgid "Go to account"
 msgstr ""
 
-#: frontend/src/sidebar/AsideContents.svelte:61
+#: frontend/src/sidebar/AsideContents.svelte:55
 msgid "Add Journal Entry"
 msgstr ""
 
-#: frontend/src/sidebar/AsideContents.svelte:76 src/fava/templates/help.html:3
+#: frontend/src/sidebar/AsideContents.svelte:70 src/fava/templates/help.html:3
 msgid "Help"
 msgstr ""
 
