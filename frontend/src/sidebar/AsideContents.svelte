@@ -42,7 +42,7 @@
   <AccountSelector />
 </ul>
 <ul class="navigation">
-  <Link report="holdings" name={_("Holdings")} key="g h" />
+  <Link report="holdings/by_account" name={_("Holdings")} key="g h" />
   <Link report="commodities" name={_("Commodities")} key="g c" />
   <Link report="documents" name={_("Documents")} key="g d" />
   <Link
