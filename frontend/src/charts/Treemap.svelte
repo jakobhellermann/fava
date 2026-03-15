@@ -50,8 +50,8 @@
         domHelpers.em(account),
       ])}
     >
-      <rect fill={fill(d)} width={d.x1 - d.x0} height={d.y1 - d.y0} />
       <a href={$url_for_account(account)}>
+        <rect fill={fill(d)} width={d.x1 - d.x0} height={d.y1 - d.y0} />
         <text
           dy=".5em"
           x={(d.x1 - d.x0) / 2}
