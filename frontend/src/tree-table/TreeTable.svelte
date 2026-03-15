@@ -7,7 +7,11 @@
   import { currency_name } from "../stores/index.ts";
   import { operating_currency } from "../stores/options.ts";
   import AccountCellHeader from "./AccountCellHeader.svelte";
-  import { get_not_shown, setTreeTableNotShownContext } from "./helpers.ts";
+  import {
+    get_not_shown,
+    setTreeTableNotShownContext,
+    tree_has_other_currencies,
+  } from "./helpers.ts";
   import TreeTableNode from "./TreeTableNode.svelte";
 
   interface Props {
@@ -26,6 +30,10 @@
   $effect(() => {
     $not_shown = $get_not_shown(tree, end);
   });
+
+  let show_other = $derived(
+    tree_has_other_currencies(tree, $operating_currency),
+  );
 </script>
 
 <ol
@@ -38,11 +46,11 @@
       {#each $operating_currency as currency (currency)}
         <span class="num" title={$currency_name(currency)}>{currency}</span>
       {/each}
-      <span class="num other">{_("Other")}</span>
+      {#if show_other}<span class="num other">{_("Other")}</span>{/if}
     </p>
   </li>
   {#each account === "" ? tree.children : [tree] as node (node.account)}
-    <TreeTableNode {node} invert={$invert_account(node.account) ? -1 : 1} />
+    <TreeTableNode {node} invert={$invert_account(node.account) ? -1 : 1} {show_other} />
   {/each}
 </ol>
 
