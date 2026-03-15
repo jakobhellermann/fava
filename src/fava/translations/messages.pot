@@ -635,7 +635,7 @@ msgstr ""
 msgid "Expand all"
 msgstr ""
 
-#: frontend/src/tree-table/TreeTable.svelte:41
+#: frontend/src/tree-table/TreeTable.svelte:49
 msgid "Other"
 msgstr ""
 

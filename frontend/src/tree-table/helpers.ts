@@ -64,3 +64,16 @@ export const get_not_shown = derived(
       return not_shown;
     },
 );
+
+/** Check whether any node in the tree has balances in non-operating currencies. */
+export function tree_has_other_currencies(
+  node: AccountTreeNode,
+  currencies: readonly string[],
+): boolean {
+  if (Object.keys(node.balance_children).some((c) => !currencies.includes(c))) {
+    return true;
+  }
+  return node.children.some((child) =>
+    tree_has_other_currencies(child, currencies),
+  );
+}

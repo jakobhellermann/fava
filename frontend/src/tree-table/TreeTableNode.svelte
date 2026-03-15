@@ -15,9 +15,11 @@
     node: AccountTreeNode;
     /** Whther to invert all numbers (either `1` or `-1`). */
     invert: number;
+    /** Whether to show the "Other" column. */
+    show_other: boolean;
   }
 
-  let { node, invert }: Props = $props();
+  let { node, invert, show_other }: Props = $props();
 
   const not_shown = getTreeTableNotShownContext();
 
@@ -56,6 +58,7 @@
         {/if}
       </span>
     {/each}
+    {#if show_other}
     <span class="num other" class:dimmed>
       {#each shown_balance_other as [currency, num] (currency)}
         {@const cost_num = shown_cost?.[currency] ?? 0}
@@ -69,11 +72,12 @@
         <br />
       {/each}
     </span>
+    {/if}
   </p>
   {#if !is_toggled && children.some((n) => !$not_shown.has(n.account))}
     <ol>
       {#each children.filter((n) => !$not_shown.has(n.account)) as child (child.account)}
-        <TreeTableNode node={child} {invert} />
+        <TreeTableNode node={child} {invert} {show_other} />
       {/each}
     </ol>
   {/if}
