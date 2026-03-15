@@ -541,17 +541,17 @@ msgstr ""
 msgid "Statistics"
 msgstr ""
 
-#: frontend/src/reports/tree_reports/index.ts:38
+#: frontend/src/reports/tree_reports/index.ts:41
 #: frontend/src/sidebar/AsideContents.svelte:21
 msgid "Income Statement"
 msgstr ""
 
-#: frontend/src/reports/tree_reports/index.ts:49
+#: frontend/src/reports/tree_reports/index.ts:52
 #: frontend/src/sidebar/AsideContents.svelte:22
 msgid "Balance Sheet"
 msgstr ""
 
-#: frontend/src/reports/tree_reports/index.ts:63
+#: frontend/src/reports/tree_reports/index.ts:70
 #: frontend/src/sidebar/AsideContents.svelte:23
 msgid "Trial Balance"
 msgstr ""

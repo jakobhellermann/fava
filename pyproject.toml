@@ -2,6 +2,7 @@
 name = "fava"
 description = "Web interface for the accounting tool Beancount."
 readme = "README.rst"
+version = "1.30.12"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [{ name = "Dominik Aumayr", email = "dominik@aumayr.name" }]
@@ -44,7 +45,6 @@ dependencies = [
   "typing-extensions>=4.5; python_version<\"3.12\"",
   "watchfiles>=0.20.0",
 ]
-dynamic = ["version"]
 
 [project.urls]
 Changelog = "https://beancount.github.io/fava/changelog.html"
