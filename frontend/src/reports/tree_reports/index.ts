@@ -1,3 +1,5 @@
+import { get as store_get } from "svelte/store";
+
 import {
   get_balance_sheet,
   get_income_statement,
@@ -10,6 +12,7 @@ import {
 import type { ParsedFavaChart } from "../../charts/index.ts";
 import { _ } from "../../i18n.ts";
 import { getURLFilters } from "../../stores/filters.ts";
+import { name_expenses } from "../../stores/options.ts";
 import { Route } from "../route.ts";
 import BalanceSheet from "./BalanceSheet.svelte";
 import IncomeStatement from "./IncomeStatement.svelte";
@@ -56,7 +59,11 @@ export const trial_balance = new Route(
     const report = await get_trial_balance(getURLFilters(url));
     const root = report.trees[0];
     if (root) {
-      report.charts.push(...root.children.map(ParsedHierarchyChart.from_node));
+      const expenses_name = store_get(name_expenses);
+      const expenses_first = [...root.children].sort((a, b) =>
+        a.account === expenses_name ? -1 : b.account === expenses_name ? 1 : 0,
+      );
+      report.charts.push(...expenses_first.map(ParsedHierarchyChart.from_node));
     }
     return report;
   },
