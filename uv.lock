@@ -629,6 +629,7 @@ wheels = [
 
 [[package]]
 name = "fava"
+version = "1.31"
 source = { editable = "." }
 dependencies = [
     { name = "babel" },
