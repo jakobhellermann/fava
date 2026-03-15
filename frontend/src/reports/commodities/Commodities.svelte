@@ -7,7 +7,7 @@
   let { charts, commodities }: CommoditiesReportProps = $props();
 </script>
 
-<ChartSwitcher {charts} />
+<ChartSwitcher {charts} show_conversion_and_interval={false} />
 {#each commodities as { base, quote, prices } (`${base}-${quote}`)}
   <div class="left">
     <h3>

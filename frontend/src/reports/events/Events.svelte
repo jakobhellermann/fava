@@ -24,7 +24,7 @@
 </script>
 
 {#if groups.length}
-  <ChartSwitcher {charts} />
+  <ChartSwitcher {charts} show_conversion_and_interval={false} />
 
   {#each groups as [type, events_in_group] (type)}
     <div class="left">
