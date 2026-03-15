@@ -55,8 +55,8 @@
       transform={`translate(${d.x0.toString()},${d.y0.toString()})`}
       {@attach followingTooltip(() => tooltipText(d))}
     >
-      <rect fill={fill(d)} width={d.x1 - d.x0} height={d.y1 - d.y0} />
       <a href={$urlForAccount(account)}>
+        <rect fill={fill(d)} width={d.x1 - d.x0} height={d.y1 - d.y0} />
         <text
           dy=".5em"
           x={(d.x1 - d.x0) / 2}
