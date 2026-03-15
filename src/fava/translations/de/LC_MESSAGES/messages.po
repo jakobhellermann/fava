@@ -564,7 +564,7 @@ msgstr "Statistiken"
 #: frontend/src/reports/tree_reports/index.ts:38
 #: frontend/src/sidebar/AsideContents.svelte:27
 msgid "Income Statement"
-msgstr "Gewinn- und Verlustrechnung"
+msgstr "Gewinn/Verlust"
 
 #: frontend/src/reports/tree_reports/index.ts:49
 #: frontend/src/sidebar/AsideContents.svelte:28
@@ -623,11 +623,11 @@ msgstr "Flächendiagramm"
 
 #: frontend/src/stores/chart.ts:57
 msgid "Stacked Bars"
-msgstr "Gestapeltes Säulendiagramm"
+msgstr "Gestapelt"
 
 #: frontend/src/stores/chart.ts:58
 msgid "Single Bars"
-msgstr "Einfaches Säulendiagramm"
+msgstr "Summiert"
 
 #: frontend/src/stores/color_scheme.ts:15
 msgid "System"
